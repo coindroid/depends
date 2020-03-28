@@ -1,0 +1,15 @@
+prefix=/prj/clean_dash/depends/x86_64-apple-darwin11
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+host_bins=${prefix}/native/bin
+qt_config=minimal-config small-config medium-config large-config full-config release_tools c++11 accessibility opengl static qpa reduce_exports getaddrinfo ipv6ifname getifaddrs poll_poll jpeg png no-gif doubleconversion no-freetype harfbuzz system-zlib dbus openssl-linked rpath corewlan concurrent no-qml-debug release
+
+Name: Qt5 Core
+Description: Qt Core module
+Version: 5.7.1
+Libs: -L${libdir} -lQt5Core 
+Libs.private: -framework DiskArbitration -framework IOKit -lz -L/prj/clean_dash/depends/x86_64-apple-darwin11/lib -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation  
+Cflags: -I${includedir}/QtCore 
+

@@ -1,0 +1,14 @@
+prefix=/prj/coinFactory/works/coins/test2/depends/x86_64-pc-linux-gnu
+exec_prefix=/prj/coinFactory/works/coins/test2/depends/x86_64-pc-linux-gnu
+libdir=/prj/coinFactory/works/coins/test2/depends/x86_64-pc-linux-gnu/lib
+includedir=/prj/coinFactory/works/coins/test2/depends/x86_64-pc-linux-gnu/include
+
+Name: FreeType 2
+URL: http://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 19.0.13
+Requires:
+Requires.private: 
+Libs: -L${libdir} -lfreetype
+Libs.private: 
+Cflags: -I${includedir}/freetype2

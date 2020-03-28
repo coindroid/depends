@@ -1,0 +1,14 @@
+prefix=/prj/clean_dash/depends/x86_64-apple-darwin11
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 OpenGL
+Description: Qt OpenGL module
+Version: 5.7.1
+Libs: -L${libdir} -lQt5OpenGL 
+Libs.private: -L/prj/clean_dash/depends/x86_64-apple-darwin11/lib -lQt5Widgets -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework OpenGL -framework AGL -framework Carbon -lQt5Gui -lqtpng -lqtharfbuzzng -lQt5Core -lz -lqtpcre -lm -framework OpenGL -framework AGL  
+Cflags: -I${includedir}/QtOpenGL 
+Requires: Qt5Core Qt5Gui Qt5Widgets
+

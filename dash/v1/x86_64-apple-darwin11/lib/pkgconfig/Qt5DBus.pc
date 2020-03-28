@@ -1,0 +1,14 @@
+prefix=/prj/clean_dash/depends/x86_64-apple-darwin11
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 DBus
+Description: Qt DBus module
+Version: 5.7.1
+Libs: -L${libdir} -lQt5DBus 
+Libs.private: -L/prj/clean_dash/depends/x86_64-apple-darwin11/lib -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation   
+Cflags: -I${includedir}/QtDBus 
+Requires: Qt5Core
+

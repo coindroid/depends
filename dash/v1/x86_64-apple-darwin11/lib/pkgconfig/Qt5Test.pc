@@ -1,0 +1,14 @@
+prefix=/prj/clean_dash/depends/x86_64-apple-darwin11
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Test
+Description: Qt Unit Testing Library
+Version: 5.7.1
+Libs: -L${libdir} -lQt5Test 
+Libs.private: -framework Security -framework Foundation -framework ApplicationServices -framework IOKit -L/prj/clean_dash/depends/x86_64-apple-darwin11/lib -lQt5Core -framework DiskArbitration -lz -lqtpcre -lm -framework CoreServices -framework AppKit -framework CoreFoundation   
+Cflags: -I${includedir}/QtTest 
+Requires: Qt5Core
+

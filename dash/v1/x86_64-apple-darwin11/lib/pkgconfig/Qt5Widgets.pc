@@ -1,0 +1,14 @@
+prefix=/prj/clean_dash/depends/x86_64-apple-darwin11
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Widgets
+Description: Qt Widgets module
+Version: 5.7.1
+Libs: -L${libdir} -lQt5Widgets 
+Libs.private: -L/prj/clean_dash/depends/x86_64-apple-darwin11/lib -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lqtpng -lqtharfbuzzng -framework OpenGL -framework AGL -lQt5Core -lz -lqtpcre -lm -framework AppKit -lz -framework Carbon -framework OpenGL -framework AGL  
+Cflags: -I${includedir}/QtWidgets 
+Requires: Qt5Core Qt5Gui
+
